@@ -23,7 +23,7 @@ USB マイクの音声を **可逆(FLAC)** で別デバイスへ転送し、受�
 ## 送信側(この Pi)
 
 ```bash
-~/kk_ws/src/mic_stream/publisher/mic-publish.sh
+~/kk_ws/src/kk_rescue26_pi/mic_publisher/mic-publish.sh   # (kk_rescue26_pi リポジトリに移設)
 # 既定: ALSA_DEV=hw:1,0  RATE=48000  PORT=5005  COMP=5
 # 例: ALSA_DEV=hw:1,0 RATE=48000 PORT=5005 COMP=8 ./mic-publish.sh
 ```
@@ -32,7 +32,7 @@ USB マイクの音声を **可逆(FLAC)** で別デバイスへ転送し、受�
 ### master control への登録(任意)
 camera / joy と同様に programs.json へ追加すれば Web UI から起動/停止できる:
 ```json
-{"id": 3, "name": "mic", "type": "bash", "cmd": "ALSA_DEV=hw:1,0 RATE=48000 PORT=5005 /home/kk/kk_ws/src/mic_stream/publisher/mic-publish.sh"}
+{"id": 3, "name": "mic", "type": "bash", "cmd": "ALSA_DEV=hw:1,0 RATE=48000 PORT=5005 /home/kk/kk_ws/src/kk_rescue26_pi/mic_publisher/mic-publish.sh"}
 ```
 
 ## 受信側(Ubuntu 解析PC)
