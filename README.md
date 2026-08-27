@@ -1,3 +1,17 @@
+> ## ⚠ このリポジトリはアーカイブされました
+>
+> 内容は **[KinkiKnights/RescuePiSystem](https://github.com/KinkiKnights/RescuePiSystem)** に
+> 統合されました（2026-08-27・全履歴を保持）。以後の更新はそちらで行います。
+>
+> | 旧パス | 新パス |
+> |---|---|
+> | `hub/` | `server/mic_hub/` |
+> | `publisher/` | `robot/mic_publisher/` |
+> | `systemd/` | `deploy/systemd/*.service.in` (テンプレート) |
+> | `tools/selftest.py` | `tools/mic_selftest.py` |
+> | `docs/protocol.md` | `docs/protocols/mic.md` |
+> | `legacy/` | `archive/mic-legacy/` |
+
 # MicStreamRes2026 — 号機マイク音声の集約配信
 
 号機(Raspberry Pi)のマイク音声を **kkrtx の 1 ポートに集約** し、
